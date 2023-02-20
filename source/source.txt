@@ -1,0 +1,1473 @@
+SQLpassword-->0000
+======================================================================================
+staff
+======================================================================================
+package Model;
+
+import java.io.Serializable;
+
+public class staff implements Serializable{
+	private Integer id;
+	private String name;
+	private String username;
+	private String password;
+	private String job;
+	private String address;
+	private String birthday;
+	private String mobile;
+	private String tod;
+	public staff() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public staff(String name, String username, String password, String job, String address, String birthday, String mobile, String tod) {
+		super();
+		this.name = name;
+		this.username = username;
+		this.password = password;
+		this.job=job;
+		this.address = address;
+		this.birthday = birthday;
+		this.mobile = mobile;
+		this.tod=tod;
+	}
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getUsername() {
+		return username;
+	}
+	public void setUsername(String username) 
+	{
+		this.username=username;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+		}
+	public String getJob() {
+		return job;
+	}
+	public void setJob(String job) {
+		this.job = job;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	public String getBirthday() {
+		return birthday;
+	}
+	public void setBirthday(String birthday) {
+		this.birthday = birthday;
+	}
+	public String getMobile() {
+		return mobile;
+	}
+	public void setMobile(String mobile) {
+		this.mobile = mobile;
+	}	
+
+	public String getTod() 
+	{
+		return tod;
+	}
+	public void setTod(String Tod) 
+	{
+		this.tod=tod;
+	}
+
+}
+======================================================================================
+member
+======================================================================================
+package Model;
+
+import java.io.Serializable;
+
+public class member implements Serializable {
+	private Integer id;
+	private String name;
+	private String username;
+	private String password;
+	private String address;
+	private String birthday;
+	private String mobile;
+	private String forget;
+	public member() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public member(String name, String username, String password, String address, String birthday, String mobile, String forget) {
+		super();
+		this.name = name;
+		this.username = username;
+		this.password = password;
+		this.address = address;
+		this.birthday = birthday;
+		this.mobile = mobile;
+		this.forget=forget;
+	}
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getUsername() {
+		return username;
+	}
+	public void setUsername(String username) {
+		this.username = username;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	public String getBirthday() {
+		return birthday;
+	}
+	public void setBirthday(String birthday) {
+		this.birthday = birthday;
+	}
+	public String getMobile() {
+		return mobile;
+	}
+	public void setMobile(String mobile) {
+		this.mobile = mobile;
+	}
+	public String getForget() 
+	{
+		return forget;
+	}
+	public void setForget(String forget) 
+	{
+		this.forget=forget;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) 
+	{
+		this.password=password;
+	}	
+}
+======================================================================================
+order2023
+======================================================================================
+package Model;
+
+import java.sql.Date;
+
+public class order2023ver2{
+	//field
+			private Integer id;
+			private String name;
+			private String address;
+			private Integer a0;
+			private Integer a1;
+			private Integer a2;
+			private Integer a3;
+			private Integer a4;
+			private Integer a5;
+			private Integer a6;
+			private Integer a7;
+			private Integer a8;
+			private Integer a9;
+			private Date odate;
+		//constructors
+			public order2023ver2() {
+				super();
+				// TODO Auto-generated constructor stub
+			}
+		public order2023ver2(String name, String address, Integer a0, Integer a1, Integer a2, Integer a3, Integer a4,
+				Integer a5, Integer a6, Integer a7, Integer a8, Integer a9,Date odate) 
+		{
+			super();
+			if(a0>=0&&a1>=0&&a2>=0&&a3>=0&&a4>=0&&a5>=0&&a6>=0&&a7>=0&&a8>=0&&a9>=0) 
+			{
+				this.name = name;
+				this.address = address;
+				this.a0 = a0;
+				this.a1 = a1;
+				this.a2 = a2;
+				this.a3 = a3;
+				this.a4 = a4;
+				this.a5 = a5;
+				this.a6 = a6;
+				this.a7 = a7;
+				this.a8 = a8;
+				this.a9 = a9;
+				this.odate=odate;
+			}
+		}
+		//methods
+		public Integer getId() {
+			return id;
+		}
+		public void setId(Integer id) {
+			this.id = id;
+		}
+		public String getName() {
+			return name;
+		}
+		public void setName(String name) {
+			this.name = name;
+		}
+		public String getAddress() {
+			return address;
+		}
+		public void setAddress(String address) {
+			this.address = address;
+		}
+		public Integer getA0() {
+			return a0;
+		}
+		public void setA0(Integer a0) {
+			this.a0 = a0;
+		}
+		public Integer getA1() {
+			return a1;
+		}
+		public void setA1(Integer a1) {
+			this.a1 = a1;
+		}
+		public Integer getA2() {
+			return a2;
+		}
+		public void setA2(Integer a2) {
+			this.a2 = a2;
+		}
+		public Integer getA3() {
+			return a3;
+		}
+		public void setA3(Integer a3) {
+			this.a3 = a3;
+		}
+		public Integer getA4() {
+			return a4;
+		}
+		public void setA4(Integer a4) {
+			this.a4 = a4;
+		}
+		public Integer getA5() {
+			return a5;
+		}
+		public void setA5(Integer a5) {
+			this.a5 = a5;
+		}
+		public Integer getA6() {
+			return a6;
+		}
+		public void setA6(Integer a6) {
+			this.a6 = a6;
+		}
+		public Integer getA7() {
+			return a7;
+		}
+		public void setA7(Integer a7) {
+			this.a7 = a7;
+		}
+		public Integer getA8() {
+			return a8;
+		}
+		public void setA8(Integer a8) {
+			this.a8 = a8;
+		}
+		public Integer getA9() {
+			return a9;
+		}
+		public void setA9(Integer a9) {
+			this.a9 = a9;
+		}
+		public Date getOdate() {
+			return odate;
+		}
+		public void setOdate(Date odate) {
+			this.odate = odate;
+		}
+}
+======================================================================================
+hotel
+======================================================================================
+package Model;
+
+import java.sql.Date;
+
+public class hotel {
+	private Integer id;
+	private String name;
+	private String mobile;
+	private Integer h1;
+	private Integer h2;
+	private Integer h4;
+	private Integer d;
+	private Date hdate;
+	public hotel() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public hotel(String name, String mobile, Integer h1, Integer h2, Integer h4, Integer d,Date hdate) {
+		super();
+		if(h1>=0&&h2>=0&&h4>=0) 
+		{
+			this.name = name;
+			this.mobile = mobile;
+			this.h1 = h1;
+			this.h2 = h2;
+			this.h4 = h4;
+			this.d=d;
+			this.hdate=hdate;
+		}
+		
+	}
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getMobile() {
+		return mobile;
+	}
+	public void setMobile(String mobile) {
+		this.mobile = mobile;
+	}
+	public Integer getH1() {
+		return h1;
+	}
+	public void setH1(Integer h1) {
+		this.h1 = h1;
+	}
+	public Integer getH2() {
+		return h2;
+	}
+	public void setH2(Integer h2) {
+		this.h2 = h2;
+	}
+	public Integer getH4() {
+		return h4;
+	}
+	public void setH4(Integer h4) {
+		this.h4 = h4;
+	}
+	public Integer getD() {
+		return d;
+	}
+	public void setD(Integer d) {
+		this.d = d;
+	}
+	public Date getHdate() {
+		return hdate;
+	}
+	public void setHdate(Date hdate) {
+		this.hdate = hdate;
+	}
+}
+======================================================================================
+event-other
+======================================================================================
+//檢查基本資料
+	@Override//檢查姓名
+	public Boolean Namecheck(String name) {
+		String Regname="\\D{2,50}";
+		Pattern pat=Pattern.compile(Regname);
+		if(pat.equals("")) 
+		{
+			return false;
+		}		
+		return pat.matcher(name).matches();
+	}
+
+	@Override//檢查帳號是否符合格式
+	public Boolean Usernamecheck(String username) {
+		String Regusername="\\w{4,50}";
+		Pattern pat=Pattern.compile(Regusername);
+		if(pat.equals("")) 
+		{
+			return false;
+		}		
+		return pat.matcher(username).matches();
+	}	
+	
+	@Override//檢查密碼
+	public Boolean Passwordcheck(String password) {
+		String Regpassword="\\w{4,50}";
+		Pattern pat=Pattern.compile(Regpassword);
+		if(pat.equals("")) 
+		{
+			return false;
+		}		
+		return pat.matcher(password).matches();
+	}
+
+	@Override//檢查地址
+	public Boolean Addresscheck(String address) {
+		String Regaddress="[\\D0-9]{3,100}";
+		Pattern pat=Pattern.compile(Regaddress);
+		if(pat.equals("")) 
+		{
+			return false;
+		}
+		return pat.matcher(address).matches();
+	}
+
+	@Override//檢查生日
+	public Boolean Birthdaycheck(String birthday) {
+		String Regbirthday="\\d{4}/\\d{2}/\\d{2}";
+		Pattern pat=Pattern.compile(Regbirthday);
+		if(pat.equals("")) 
+		{
+			return false;
+		}	
+		return pat.matcher(birthday).matches();
+	}
+
+	@Override//檢查電話/手機
+	public Boolean Mobilecheck(String mobile) {
+		String Regmobile="\\d{10}";
+		Pattern pat=Pattern.compile(Regmobile);
+		if(pat.equals("")) 
+		{
+			return false;
+		}	
+		return pat.matcher(mobile).matches();
+	}
+//檢查員工其他資料欄
+	@Override//檢查工作單位
+	public Boolean Jobcheck(String job) {
+		String Regjob="\\D{2,50}";
+		Pattern pat=Pattern.compile(Regjob);
+		
+		if(pat.equals("")) 
+		{
+			return false;
+		}		
+		return pat.matcher(job).matches();
+	}
+	@Override//檢查到職日
+	public Boolean Todcheck(String tod) {
+		String Regtod="\\d{4}/\\d{2}/\\d{2}";
+		Pattern pat=Pattern.compile(Regtod);
+		if(pat.equals("")) 
+		{
+			return false;
+		}		
+		return pat.matcher(tod).matches();
+	}
+//檢查會員其他資料欄
+	@Override//檢查忘記密碼
+	public Boolean Forgetcheck(String forget) {
+		String Regforget="[\\D0-9]{4,50}";
+		Pattern pat=Pattern.compile(Regforget);
+		if(pat.equals("")) 
+		{
+			return false;
+		}		
+		return pat.matcher(forget).matches();
+	}
+}
+contentPane.add(time);
+		//時間設置
+		Timer timer = new Timer();
+		timer.schedule(new TimerTask() {
+			public void run() {
+				Calendar calendar = Calendar.getInstance();
+				int year = calendar.get(Calendar.YEAR);
+				int month = calendar.get(Calendar.MONTH) + 1;
+				int day = calendar.get(Calendar.DATE);
+				int hour = calendar.get(Calendar.HOUR_OF_DAY);
+				int minute = calendar.get(Calendar.MINUTE);
+				int second = calendar.get(Calendar.SECOND);
+				time.setText("西元"+year + "年" + String.format("%02d", month) + "月" + String.format("%02d", day) + "日 "
+						+ String.format("%02d", hour) + ":" + minute + ":" + second);				
+			}
+		}, 0, 1000);
+//設定工作單位選單以及點擊後轉成String顯示於旁邊格子
+String[] j=new String[] {"旅館","老師","餐廳","老闆"};
+JList job = new JList(j);
+		job.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				if(e.getClickCount()==1) 
+				{
+					String Jo=(String)job.getSelectedValue();
+					JOB.setText(Jo);
+					
+				}
+			}
+		});
+//清空
+cls.addMouseListener(new MouseAdapter() {
+			@Override//清空
+			public void mouseClicked(MouseEvent e) {
+					a0.setValue(0);
+					a1.setValue(0);
+					a2.setValue(0);
+					a3.setValue(0);
+					a4.setValue(0);
+					a5.setValue(0);
+					a6.setValue(0);
+					a7.setValue(0);
+					a8.setValue(0);
+					a9.setValue(0);
+					output.setText("");			
+			}
+		});
+print.addMouseListener(new MouseAdapter() {
+			@Override//列印
+			public void mouseClicked(MouseEvent e) {
+				try 
+				{
+					buy.print();
+				}
+				catch(PrinterException ex)
+				{
+					ex.printStackTrace();
+				}
+			}
+		});
+======================================================================================
+event-staff
+======================================================================================
+////C
+//新增員工資料
+		JButton sadd = new JButton("確認送出");
+		sadd.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				
+				/* 
+				* 1.username->getText()
+				 * 2.帳號判斷->qeuryusername():boolean
+				 * 3.true->重複->跳出重複訊息
+				 * 4.false->檢查其他資料欄是否填寫正確
+				 * 5.false->跳出錯誤訊息
+				 * 6.true->跳出成功訊息並回首頁
+				 */
+				String Username=username.getText();
+				String Name=name.getText();
+				String Password=password.getText();
+				String Job=JOB.getText();
+				String Address=address.getText();
+				String Birthday=birthday.getText();
+				String Mobile=mobile.getText();
+				String Tod=tod.getText();
+				if(new implstaff().queryUser(Username)==false && new implother().Usernamecheck(Username)==true) 
+				{
+					if(new implother().Namecheck(Name)==true) 
+					{
+						if(new implother().Passwordcheck(Password)==true) 
+						{
+							if(new implother().Addresscheck(Address)==true) 
+							{
+								if(new implother().Birthdaycheck(Birthday)==true) 
+								{
+									if(new implother().Mobilecheck(Mobile)==true) 
+									{
+										if(new implother().Todcheck(Tod)==true) 
+										{
+											if(new implother().Jobcheck(Job)==true) 
+											{
+												staff s=new staff(Name,Username,Password,Job,Address,Birthday,Mobile,Tod);
+												new implstaff().add(s);
+												JOptionPane.showMessageDialog(null,"填表完成!");
+												stafflogin sl=new stafflogin();
+												sl.setVisible(true);
+												dispose();
+											}
+											else
+											{
+												JOptionPane.showMessageDialog(null,"請選擇工作單位!");
+											}
+										}
+										else 
+										{
+											JOptionPane.showMessageDialog(null,"到職日(填表日)請輸入yyyy/MM/dd 如:1970/01/01!");
+										}
+									}
+									else 
+									{
+										JOptionPane.showMessageDialog(null,"電話/手機請輸入10個數字!");
+									}
+								}
+								else 
+								{
+									JOptionPane.showMessageDialog(null,"生日請輸入yyyy/MM/dd 如:1970/01/01!");
+								}
+							}
+							else 
+							{
+								JOptionPane.showMessageDialog(null,"地址請輸入3個字以上!");
+							}							
+						}
+						else
+						{
+							JOptionPane.showMessageDialog(null,"密碼請輸入4個字以上英文或數字!");
+						}
+					}
+					else
+					{
+						JOptionPane.showMessageDialog(null,"名字請輸入2個字以上,不含數字!");
+					}
+				}
+				else
+				{
+					JOptionPane.showMessageDialog(null,"帳號重複!請重新輸入欲註冊的帳號!"+									
+										"\n或"+
+										"\n帳號請輸入至少4個英文或數字!");
+				}	
+			}	
+		});
+
+////R
+//員工登入
+login.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				/*
+				 * 1.帳號密碼 getText()
+				 * 2.queryUser(帳號,密碼):staff
+				 * 3.!=unll->員工管理選單
+				 * 4.null->出現登入錯誤訊息框
+				 */
+				String Username=username.getText();
+				String Password=password.getText();
+				staff s= new implstaff().queryStaff(Username,Password);
+				if(s!=null)//若帳號密碼有在資料庫內 
+				{	try {
+					FileOutputStream fos=new FileOutputStream("slcookie.txt");//存檔
+					ObjectOutputStream oos=new ObjectOutputStream(fos);//轉成可以寫入的狀態
+					oos.writeObject(s);//寫入
+					staffbkma sbm=new staffbkma();
+					sbm.setVisible(true);//進入管理頁
+					dispose();
+				} catch (FileNotFoundException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				} catch (IOException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+					
+				}
+				else 
+				{
+					JOptionPane.showMessageDialog(null,"帳號或密碼錯誤,請重新輸入!");
+				}
+				
+				
+			}
+		});
+//抓取登入資料,顯示登入人員之姓名在管理頁。
+private staff s=new staff();//抓取的表
+	private FileInputStream fis=null;
+	private ObjectInputStream ois=null;//所有要抓取登入者資訊之JFrame都先在靜態class打上這三行
+contentPane.add(on);
+		try {
+			fis=new FileInputStream("slcookie.txt");
+			ois=new ObjectInputStream(fis);
+			if(ois!=null) 
+			{
+				staff s=(staff)ois.readObject();
+				on.setText("員工:"+s.getName());
+			}
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+//查詢全部年菜訂單
+QorA.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				List<order2023ver2> l=new implOrder2023ver2().selectAll();
+				order2023ver2[] o=l.toArray(new order2023ver2[l.size()]);
+				
+				String str="";
+				Integer sum=0;
+				for(int i=0;i<o.length;i++) 
+				{
+					sum=sum+(o[i].getA0()*500+o[i].getA1()*500+o[i].getA2()*700+o[i].getA3()*400+o[i].getA4()*1000+o[i].getA5()*1000+o[i].getA6()*1000+o[i].getA7()*600+o[i].getA8()*400+o[i].getA9()*5200);
+				}
+				for(order2023ver2 O:o) 
+				{
+					str=str+"ID:"+O.getId()+"\t姓名:"+O.getName()+"\t配送地址:"+O.getAddress()+"\t訂購日期:"+O.getOdate()+
+							"\n===================================================="+
+							"\n麻辣兔頭500元/份:"+O.getA0()+"份"+
+							"\n冷吃兔500元/份:"+O.getA1()+"份"+
+							"\n紹興醉雞700元/份:"+O.getA2()+"份"+
+							"\n蓮葉蓮子團圓飯400元/份:"+O.getA3()+"份"+
+							"\n蒲燒鰻米糕1000元/份:"+O.getA4()+"份"+
+							"\n煎白鯧魚1000元/份:"+O.getA5()+"份"+
+							"\n干貝極品佛跳牆1000元/份:"+O.getA6()+"份"+
+							"\n紹興醉蝦600元/份:"+O.getA7()+"份"+
+							"\n奶黃流沙包400元/份:"+O.getA8()+"份"+
+							"\n大人就是全都要5200元/份:"+O.getA9()+"份"+
+							"\n===================================================="+
+							"\n合計:"+sum+"元"+
+							"\n----------------------------------------------------------------------------"+"\n";
+				}
+				show.setText(str);	
+			
+			}
+		});
+//查詢全部訂房資料
+		QhA.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				List<hotel> l=new implhotel().selectAll();
+				hotel[] h=l.toArray(new hotel[l.size()]);
+				
+				String str="";
+				Integer sum=0;
+				for(int i=0;i<h.length;i++) 
+				{
+					sum=sum+(((h[i].getH1()*1500)+(h[i].getH2()*2500)+(h[i].getH4()*4500))*h[i].getD());
+				}
+				for(hotel H:h ) 
+				{
+					str=str+"ID:"+H.getId()+"\t訂房人姓名:"+H.getName()+"\t訂房人電話/手機:"+H.getMobile()+"\t訂房日期:"+H.getHdate()+
+							"\n單人房:"+H.getH1()+"間"+
+							"\t雙人房:"+H.getH2()+"間"+
+							"\t四人房:"+H.getH4()+"間"+
+							"\n總金額:"+sum+"元"+
+							"\n---------------------------------------------------------------------"+"\n";
+				}
+				show.setText(str);	
+			}
+		});
+//以id查詢單筆年菜訂單
+		oneOR.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				Integer Id=Integer.parseInt(ID.getText());
+				List<order2023ver2> l=new implOrder2023ver2().selectId(Id);
+				order2023ver2[] o=l.toArray(new order2023ver2[l.size()]);
+				
+				String str="";
+				Integer sum=0;
+				for(int i=0;i<o.length;i++) 
+				{
+					sum=sum+(o[i].getA0()*500+o[i].getA1()*500+o[i].getA2()*700+o[i].getA3()*400+o[i].getA4()*1000+o[i].getA5()*1000+o[i].getA6()*1000+o[i].getA7()*600+o[i].getA8()*400+o[i].getA9()*5200);
+				}
+				for(order2023ver2 O:o) 
+				{
+					str=str+"ID:"+O.getId()+"\t姓名:"+O.getName()+"\t配送地址:"+O.getAddress()+"\t訂購日期:"+O.getOdate()+
+							"\n===================================================="+
+							"\n麻辣兔頭500元/份:"+O.getA0()+"份"+
+							"\n冷吃兔500元/份:"+O.getA1()+"份"+
+							"\n紹興醉雞700元/份:"+O.getA2()+"份"+
+							"\n蓮葉蓮子團圓飯400元/份:"+O.getA3()+"份"+
+							"\n蒲燒鰻米糕1000元/份:"+O.getA4()+"份"+
+							"\n煎白鯧魚1000元/份:"+O.getA5()+"份"+
+							"\n干貝極品佛跳牆1000元/份:"+O.getA6()+"份"+
+							"\n紹興醉蝦600元/份:"+O.getA7()+"份"+
+							"\n奶黃流沙包400元/份:"+O.getA8()+"份"+
+							"\n大人就是全都要5200元/份:"+O.getA9()+"份"+
+							"\n===================================================="+
+							"\n合計:"+sum+"元"+
+							"\n----------------------------------------------------------------------------"+"\n";
+				}
+				show.setText(str);	
+			}
+		});
+//以id查詢單筆訂房資料
+		oneHO.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				Integer Id2=Integer.parseInt(ID2.getText());
+				List<hotel> l=new implhotel().selectId(Id2);
+				hotel[] h=l.toArray(new hotel[l.size()]);
+				
+				String str="";
+				Integer sum=0;
+				for(int i=0;i<h.length;i++) 
+				{
+					sum=sum+(((h[i].getH1()*1500)+(h[i].getH2()*2500)+(h[i].getH4()*4500))*h[i].getD());
+				}
+				for(hotel H:h ) 
+				{
+					str=str+"ID:"+H.getId()+"\t訂房人姓名:"+H.getName()+"\t訂房人電話/手機:"+H.getMobile()+"\t訂房日期:"+H.getHdate()+
+							"\n單人房:"+H.getH1()+"間"+
+							"\t雙人房:"+H.getH2()+"間"+
+							"\t四人房:"+H.getH4()+"間"+
+							"\n總金額:"+sum+"元"+
+							"\n---------------------------------------------------------------------"+"\n";
+				}
+				show.setText(str);
+			}
+		});
+
+////U
+//員工基本資料修改
+OK1.addMouseListener(new MouseAdapter() {
+			@Override//基本資料修改
+			public void mouseClicked(MouseEvent e) {
+				try {
+					fis=new FileInputStream("slcookie.txt");
+					ois=new ObjectInputStream(fis);
+					String Name=name.getText();
+					String Address=address.getText();
+					String Mobile=mobile.getText();
+					staff s=(staff)ois.readObject();
+					if(new implother().Namecheck(Name)) 
+					{
+						if(new implother().Addresscheck(Address)) 
+						{
+							if(new implother().Mobilecheck(Mobile)) 
+							{
+								staff S=new implstaff().selectId2(s.getId());
+								S.setName(Name);
+								S.setAddress(Address);
+								S.setMobile(Mobile);
+								new implstaff().update(S);
+								JOptionPane.showMessageDialog(null,"修改成功!");
+							}
+							else 
+							{
+								JOptionPane.showMessageDialog(null,"電話/手機請輸入10個數字!");
+							}
+						}
+						else 
+						{
+							JOptionPane.showMessageDialog(null,"地址請輸入3個字以上!");
+						}
+					}
+					else 
+					{
+						JOptionPane.showMessageDialog(null,"名字請輸入2個字以上,不含數字!");
+					}
+					
+				} catch (FileNotFoundException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				} catch (IOException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				} catch (ClassNotFoundException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}		
+			}
+		});
+//員工工作單位修改
+		OK2.addMouseListener(new MouseAdapter() {
+			@Override//老闆表示要給員工調職(?)
+			public void mouseClicked(MouseEvent e) {
+				try {
+					fis=new FileInputStream("slcookie.txt");
+					ois=new ObjectInputStream(fis);
+					Integer Id=Integer.parseInt(id.getText());
+					String Job=job.getText();
+					staff s=(staff)ois.readObject();
+					if(s.getJob().equals(new staffadd().j[3])) 
+					{
+						staff s1=new implstaff().selectId2(Id);
+						s1.setJob(Job);
+						new implstaff().update(s1);;
+						JOptionPane.showMessageDialog(null,"修改成功!");
+					}
+					else 
+					{
+						JOptionPane.showMessageDialog(null,"不是老闆不能改!");
+					}
+					
+				} catch (FileNotFoundException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				} catch (IOException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				} catch (ClassNotFoundException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+				
+			}
+		});
+//
+
+////D
+//刪除員工
+ds.addMouseListener(new MouseAdapter() {
+			@Override//刪除員工
+			public void mouseClicked(MouseEvent e) {
+				try {
+					fis=new FileInputStream("slcookie.txt");
+					ois=new ObjectInputStream(fis);
+					Integer Id=Integer.parseInt(id.getText());
+					staff s=(staff)ois.readObject();
+					if(s.getJob().equals(new staffadd().j[3])) 
+					{
+						new implstaff().delete(Id);
+						JOptionPane.showMessageDialog(null,"刪除成功!");
+					}
+					else 
+					{
+						JOptionPane.showMessageDialog(null,"不是老闆不能刪除!");
+					}
+					
+				} 
+				  catch (FileNotFoundException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				} catch (IOException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				} 
+				  catch (ClassNotFoundException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+			}
+		});
+		returnma.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				staffbkma sb=new staffbkma();
+				sb.setVisible(true);
+				dispose();
+			
+			}
+		});
+//以id刪除單筆年菜訂單
+dor.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				Integer Id3=Integer.parseInt(ID3.getText());
+				new implOrder2023ver2().delete(Id3);
+			}
+		});
+//以id刪除單筆訂房訂單
+		dho.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				Integer Id4=Integer.parseInt(ID4.getText());
+				new implhotel().delete(Id4);
+			}
+		});
+======================================================================================
+event-member
+======================================================================================
+////C
+//新增會員
+		madd.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				/* 
+				* 1.username->getText()
+				 * 2.帳號判斷->qeuryusername():boolean
+				 * 3.true->重複->跳出重複訊息
+				 * 4.false->檢查其他資料欄是否填寫正確
+				 * 5.false->跳出錯誤訊息
+				 * 6.true->跳出成功訊息並回首頁
+				 */
+				String Username=username.getText();
+				String Name=name.getText();
+				String Password=password.getText();
+				String Address=address.getText();
+				String Birthday=birthday.getText();
+				String Mobile=mobile.getText();
+				String Forget=forget.getText();
+				if(new implmember().queryUser(Username)==false&&new implother().Usernamecheck(Username)==true) 
+				{
+					if(new implother().Namecheck(Name)==true) 
+					{
+						if(new implother().Passwordcheck(Password)==true) 
+						{
+							if(new implother().Addresscheck(Address)==true) 
+							{
+								if(new implother().Birthdaycheck(Birthday)==true) 
+								{
+									if(new implother().Mobilecheck(Mobile)==true) 
+									{
+										if(new implother().Forgetcheck(Forget)==true) 
+										{
+											member m=new member(Name,Username,Password,Address,Birthday,Mobile,Forget);
+											new implmember().add(m);
+											JOptionPane.showMessageDialog(null,"註冊成功!");
+											memberlogin ml=new memberlogin();
+											ml.setVisible(true);
+											dispose();
+										}
+										else 
+										{
+											JOptionPane.showMessageDialog(null,"忘記密碼提示請輸入至少4個任意字");
+										}
+									}
+									else 
+									{
+										JOptionPane.showMessageDialog(null,"電話/手機請輸入10個數字!");
+									}
+								}
+								else 
+								{
+									JOptionPane.showMessageDialog(null,"生日請輸入yyyy/MM/dd 如:1970/01/01!");
+								}
+							}
+							else 
+							{
+								JOptionPane.showMessageDialog(null,"地址請輸入3個字以上!");
+							}
+						} 
+						else
+						{
+							JOptionPane.showMessageDialog(null,"密碼請輸入4個字以上英文或數字!");
+						}
+					}
+					else 
+					{
+						JOptionPane.showMessageDialog(null,"名字請輸入2個字以上,不含數字!");
+					}
+				}
+				else 
+				{
+					JOptionPane.showMessageDialog(null,"帳號重複!請重新輸入欲註冊的帳號!"+
+																					"\n或"+
+																					"\n帳號請輸入至少4個英文或數字!");
+				}
+				
+			}
+		});
+////R
+mlogin.addMouseListener(new MouseAdapter() {//會員登入
+		@Override
+		public void mouseClicked(MouseEvent e) {
+			String Username=username.getText();
+			String Password=password.getText();
+			member m=new implmember().queryMember(Username, Password);
+			if(m!=null) 
+			{
+				try {
+					FileOutputStream fos = new FileOutputStream("mlcookie.txt");
+					ObjectOutputStream oos=new ObjectOutputStream(fos);
+					oos.writeObject(m);
+					memberMa ma=new memberMa();
+					ma.setVisible(true);
+					dispose();
+				} catch (FileNotFoundException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				} catch (IOException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+				
+			}
+			else 
+			{
+				JOptionPane.showMessageDialog(null,"帳號或密碼錯誤,請重新輸入!");
+			}
+		}
+	});
+//檢查該帳號是否註冊(?),若有註冊則給忘記密碼提示
+check.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				String Username=username.getText();
+				if(new implmember().queryUser(Username)) 
+				{	
+					String A=new implmember().selectUf(Username).getForget();
+					
+					JOptionPane.showMessageDialog(null,"忘記密碼提示:"+A);
+				}
+				else 
+				{
+					JOptionPane.showMessageDialog(null,"查無此帳號!");
+				}
+			}
+		});
+
+////U
+OK1.addMouseListener(new MouseAdapter() {
+			@Override//密碼跟忘記密碼提示修改
+			public void mouseClicked(MouseEvent e) {
+				/*
+				 * 1.判斷舊密碼是否正確
+				 * 2.正確-->判斷新密碼是否符合格式
+				 * 3.不正確-->跳訊息框"密碼錯誤"
+				 * 4.修改忘記密碼
+				 */
+				String Username=username.getText();
+				String PasswordOld=passwordOld.getText();
+				String Password=password.getText();
+				String Forget=forget.getText();
+				member m=new implmember().queryMember(Username, PasswordOld);
+				if(m!=null) 
+				{
+					try {
+						FileOutputStream fos = new FileOutputStream("mlcookie.txt");
+						ObjectOutputStream oos=new ObjectOutputStream(fos);
+						oos.writeObject(m);
+					} catch (FileNotFoundException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					} catch (IOException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
+					if(new implother().Passwordcheck(Password)) 
+					{
+						if(new implother().Forgetcheck(Forget)) 
+						{
+							member M=new implmember().selectId(m.getId());
+							M.setPassword(Password);
+							M.setForget(Forget);
+							new implmember().update(M);
+							JOptionPane.showMessageDialog(null,"修改成功!");
+							memberlogin mm=new memberlogin();
+							mm.setVisible(true);
+							dispose();
+						}
+						else 
+						{
+							JOptionPane.showMessageDialog(null,"忘記密碼提示請輸入至少4個任意字");
+						}
+					}
+					else 
+					{
+						JOptionPane.showMessageDialog(null,"密碼請輸入4個字以上英文或數字!");
+					}
+					
+				}
+				else 
+				{
+					JOptionPane.showMessageDialog(null,"密碼錯誤,請重新輸入!");
+				}	
+			}
+		});
+		OK2.addMouseListener(new MouseAdapter() {
+			@Override//基本資料修改
+			public void mouseClicked(MouseEvent e) {
+				try {
+					fis=new FileInputStream("mlcookie.txt");
+					ois=new ObjectInputStream(fis);
+					String Name=name.getText();
+					String Address=address.getText();
+					String Mobile=mobile.getText();
+					member m=(member)ois.readObject();
+					if(new implother().Namecheck(Name)) 
+					{
+						if(new implother().Addresscheck(Address)) 
+						{
+							if(new implother().Mobilecheck(Mobile)) 
+							{
+								member M=new implmember().selectId(m.getId());
+								M.setName(Name);
+								M.setAddress(Address);
+								M.setMobile(Mobile);
+								new implmember().update(M);
+								JOptionPane.showMessageDialog(null,"修改成功!");
+							}
+							else 
+							{
+								JOptionPane.showMessageDialog(null,"電話/手機請輸入10個數字!");
+							}
+						}
+						else 
+						{
+							JOptionPane.showMessageDialog(null,"地址請輸入3個字以上!");
+						}
+					}
+					else 
+					{
+						JOptionPane.showMessageDialog(null,"名字請輸入2個字以上,不含數字!");
+					}
+					
+				} catch (FileNotFoundException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				} catch (IOException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				} catch (ClassNotFoundException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}		
+			}
+		});
+
+
+======================================================================================
+event-order2023ver2
+======================================================================================
+ok.addMouseListener(new MouseAdapter() {
+			@Override//結帳
+			public void mouseClicked(MouseEvent e) {
+				String Name=name.getText();
+				String Address=address.getText();
+				Integer A0=(Integer)a0.getValue();
+				Integer A1=(Integer)a1.getValue();
+				Integer A2=(Integer)a2.getValue();
+				Integer A3=(Integer)a3.getValue();
+				Integer A4=(Integer)a4.getValue();
+				Integer A5=(Integer)a5.getValue();
+				Integer A6=(Integer)a6.getValue();
+				Integer A7=(Integer)a7.getValue();
+				Integer A8=(Integer)a8.getValue();
+				Integer A9=(Integer)a9.getValue();
+				Integer sum=(A0*500+A1*500+A2*700+A3*400+A4*1000+A5*1000+A6*1000+A7*600+A8*400+A9*5200);
+				String Sum=sum.toString();
+				output.setText(Sum);	
+			}
+		});
+		pay.addMouseListener(new MouseAdapter() {
+			@Override//付款
+			public void mouseClicked(MouseEvent e) {
+				try {
+					fis=new FileInputStream("mlcookie.txt");
+					ois=new ObjectInputStream(fis);
+					String Name=name.getText();
+					String Address=address.getText();
+					member m=(member)ois.readObject();
+					Integer A0=(Integer)a0.getValue();
+					Integer A1=(Integer)a1.getValue();
+					Integer A2=(Integer)a2.getValue();
+					Integer A3=(Integer)a3.getValue();
+					Integer A4=(Integer)a4.getValue();
+					Integer A5=(Integer)a5.getValue();
+					Integer A6=(Integer)a6.getValue();
+					Integer A7=(Integer)a7.getValue();
+					Integer A8=(Integer)a8.getValue();
+					Integer A9=(Integer)a9.getValue();
+					Integer Output=Integer.parseInt(output.getText());
+					Integer Input=Integer.parseInt(input.getText());
+					Date Odate=new Date();
+					order2023ver2 o=new order2023ver2(Name,Address,A0,A1,A2,A3,A4,A5,A6,A7,A8,A9,new java.sql.Date(Odate.getTime()));
+					
+					new implOrder2023ver2().add(o);
+					buy.setText("姓名:"+Name+"\t配送地址:"+Address+"\t訂購日期:"+new java.sql.Date(Odate.getTime())+
+							"\n===================================================="+
+							"\n麻辣兔頭500元/份:"+A0+"份"+
+							"\n冷吃兔500元/份:"+A1+"份"+
+							"\n紹興醉雞700元/份:"+A2+"份"+
+							"\n蓮葉蓮子團圓飯400元/份:"+A3+"份"+
+							"\n蒲燒鰻米糕1000元/份:"+A4+"份"+
+							"\n煎白鯧魚1000元/份:"+A5+"份"+
+							"\n干貝極品佛跳牆1000元/份:"+A6+"份"+
+							"\n紹興醉蝦600元/份:"+A7+"份"+
+							"\n奶黃流沙包400元/份:"+A8+"份"+
+							"\n大人就是全都要5200元/份:"+A9+"份"+
+							"\n===================================================="+
+							"\n合計:"+output.getText()+"元"+
+							"\t找零:"+(Input-Output)+"元");
+					
+					
+				} catch (FileNotFoundException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				} catch (IOException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				} catch (ClassNotFoundException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}	
+			}
+		});
+		rd.addMouseListener(new MouseAdapter() {
+			@Override//以姓名查詢
+			public void mouseClicked(MouseEvent e){
+			String Name1=name1.getText();
+			List<order2023ver2> l=new implOrder2023ver2().selectName(Name1);
+			order2023ver2[] o=l.toArray(new order2023ver2[l.size()]);
+			
+			String str="";
+			Integer sum=0;
+			for(int i=0;i<o.length;i++) 
+			{
+				sum=sum+(o[i].getA0()*500+o[i].getA1()*500+o[i].getA2()*700+o[i].getA3()*400+o[i].getA4()*1000+o[i].getA5()*1000+o[i].getA6()*1000+o[i].getA7()*600+o[i].getA8()*400+o[i].getA9()*5200);
+			}
+			for(order2023ver2 O:o) 
+			{
+				str=str+"姓名:"+O.getName()+"\t配送地址:"+O.getAddress()+"\t訂購日期:"+O.getOdate()+
+						"\n===================================================="+
+						"\n麻辣兔頭500元/份:"+O.getA0()+"份"+
+						"\n冷吃兔500元/份:"+O.getA1()+"份"+
+						"\n紹興醉雞700元/份:"+O.getA2()+"份"+
+						"\n蓮葉蓮子團圓飯400元/份:"+O.getA3()+"份"+
+						"\n蒲燒鰻米糕1000元/份:"+O.getA4()+"份"+
+						"\n煎白鯧魚1000元/份:"+O.getA5()+"份"+
+						"\n干貝極品佛跳牆1000元/份:"+O.getA6()+"份"+
+						"\n紹興醉蝦600元/份:"+O.getA7()+"份"+
+						"\n奶黃流沙包400元/份:"+O.getA8()+"份"+
+						"\n大人就是全都要5200元/份:"+O.getA9()+"份"+
+						"\n===================================================="+
+						"\n合計:"+sum+"元"+"\n";
+			}
+			show.setText(str);				
+			}
+		});
+======================================================================================
+event-hotel
+======================================================================================
+//房型點按次數
+	Integer c=0;
+	Integer c2=0;
+	Integer c4=0;
+	//天數點按次數
+	Integer p=0;
+h1b.addMouseListener(new MouseAdapter() {
+			@Override//訂單人房,一下=1
+			public void mouseClicked(MouseEvent e) {
+				if(c>3) {
+					JOptionPane.showMessageDialog(null, "單人房只有4間喔!");
+				}
+				else 
+				{
+					c++;
+					h1.setText(Integer.toString(c));
+				}
+			}
+		});
+		h2b.addMouseListener(new MouseAdapter() {
+			@Override//訂雙人房,一下=1
+			public void mouseClicked(MouseEvent e) {
+				if(c2>3) {
+					JOptionPane.showMessageDialog(null, "雙人房只有4間喔!");
+				}
+				else 
+				{
+					c2++;
+					h2.setText(Integer.toString(c2));
+				}
+				
+			}
+		});
+		h4b.addMouseListener(new MouseAdapter() {
+			@Override//訂四人房,一下=1
+			public void mouseClicked(MouseEvent e) {
+				if(c4>3) {
+					JOptionPane.showMessageDialog(null, "四人房只有4間喔!");
+				}
+				else 
+				{
+					c4++;
+					h4.setText(Integer.toString(c4));
+				}
+			}
+		});
+		plus.addMouseListener(new MouseAdapter() {
+			@Override//增加天數按鈕
+			public void mouseClicked(MouseEvent e) {
+				p++;
+				d.setText(Integer.toString(p));
+			}
+		});
+		clean.addMouseListener(new MouseAdapter() {
+			@Override//清除
+			public void mouseClicked(MouseEvent e) {
+				h1.setText("0");
+				h2.setText("0");
+				h4.setText("0");
+				d.setText("0");
+			}
+		});
+		
+		ok.addMouseListener(new MouseAdapter() {
+			@Override//結帳
+			public void mouseClicked(MouseEvent e) {
+				Integer H1=Integer.parseInt(h1.getText());
+				Integer H2=Integer.parseInt(h2.getText());
+				Integer H4=Integer.parseInt(h4.getText());
+				Integer D=Integer.parseInt(d.getText());
+				Integer sum=(((H1*1500)+(H2*2500)+(H4*4500))*D);
+				String Sum=sum.toString();
+				total.setText(Sum);	
+			}
+		});
+		pay1.addMouseListener(new MouseAdapter() {
+			@Override//付款
+			public void mouseClicked(MouseEvent e) {
+				try {
+					fis=new FileInputStream("mlcookie.txt");
+					ois=new ObjectInputStream(fis);
+					Integer H1=Integer.parseInt(h1.getText());
+					Integer H2=Integer.parseInt(h2.getText());
+					Integer H4=Integer.parseInt(h4.getText());
+					Integer D=Integer.parseInt(d.getText());
+					Integer Pay=Integer.parseInt(pay.getText());
+					Integer Total=Integer.parseInt(total.getText());
+					Date Hdate=new Date();
+					member m=(member)ois.readObject();
+					hotel h=new hotel(m.getName(),m.getMobile(),H1,H2,H4,D,new java.sql.Date(Hdate.getTime()));
+					
+					new implhotel().add(h);
+					buy.setText("訂房人姓名:"+m.getName()+"\t訂房人電話/手機:"+m.getMobile()+"\t訂房日期:"+new java.sql.Date(Hdate.getTime())+
+										"\n============================================================================="+
+										"\n單人房:"+H1+"間"+
+										"\n雙人房:"+H2+"間"+
+										"\n四人房:"+H4+"間"+
+										"\n============================================================================="+
+										"\n總金額:"+total.getText()+"元"+
+										"\n找零:"+(Pay-Total)+"元");					
+				} catch (FileNotFoundException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				} catch (IOException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				} catch (ClassNotFoundException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+			}
+		});
+		queryM.addMouseListener(new MouseAdapter() {
+			@Override//以電話/手機搜尋訂房資料
+			public void mouseClicked(MouseEvent e) {
+				String Mobile=mobile.getText();
+				List<hotel> l=new implhotel().selectMobile(Mobile);
+				hotel[] h=l.toArray(new hotel[l.size()]);
+				
+				String str="";
+				Integer sum=0;
+				for(int i=0;i<h.length;i++) 
+				{
+					sum=sum+(((h[i].getH1()*1500)+(h[i].getH2()*2500)+(h[i].getH4()*4500))*h[i].getD());
+				}
+				for(hotel H:h ) 
+				{
+					str=str+"訂房人姓名:"+H.getName()+"\t訂房人電話/手機:"+H.getMobile()+"\t訂房日期:"+H.getHdate()+
+							"\n單人房:"+H.getH1()+"間"+
+							"\t雙人房:"+H.getH2()+"間"+
+							"\t四人房:"+H.getH4()+"間"+
+							"\n總金額:"+sum+"元"+"\n";
+				}
+				show.setText(str);	
+			}
+		});
+
